@@ -1,0 +1,7 @@
+[database]
+foo.example.com
+bar.examle.net
+
+[application]
+app.example.com
+

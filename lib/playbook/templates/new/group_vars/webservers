@@ -1,0 +1,3 @@
+---
+apacheMaxRequestsPerChild: 3000
+apacheMaxClients: 900
