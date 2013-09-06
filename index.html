@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ansible Utils by pferdefleisch</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ansible Utils</h1>
+        <p>Playbook and role scaffold generator for ansible http://www.ansibleworks.com/docs/</p>
+
+        <p class="view"><a href="https://github.com/pferdefleisch/ansible_utils">View the Project on GitHub <small>pferdefleisch/ansible_utils</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/pferdefleisch/ansible_utils/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/pferdefleisch/ansible_utils/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/pferdefleisch/ansible_utils">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="ansible-utils" class="anchor" href="#ansible-utils"><span class="octicon octicon-link"></span></a>Ansible Utils</h1>
+
+<p>Scaffold generator for ansible playbooks</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Install ruby &gt;= v1.9.2</p>
+
+<pre><code>$ gem install ansible_utils
+</code></pre>
+
+<p>if using rbenv, don't forget to</p>
+
+<pre><code>$ rbenv rehash
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>This will install a <code>playbook</code> executable to your path (if you have ruby or your ruby version manager set up correctly)</p>
+
+<h3>
+<a name="playbook-new" class="anchor" href="#playbook-new"><span class="octicon octicon-link"></span></a>playbook new</h3>
+
+<p>create a new playbook in current, relative or absolute filepath</p>
+
+<pre><code># new playbook in not yet created "foo" directory
+$ playbook new foo
+</code></pre>
+
+<p>you should see the output</p>
+
+<pre><code>  create  foo
+  create  foo/dbservers.yml
+  create  foo/group_vars/all
+  create  foo/group_vars/atlanta
+  create  foo/group_vars/webservers
+  create  foo/host_vars/db-bos-1.example.com
+  create  foo/production
+  create  foo/roles/app/files/bar.txt
+  create  foo/roles/app/handlers/main.yml
+  create  foo/roles/app/tasks/main.yml
+  create  foo/roles/app/templates/noop.conf.j2
+  create  foo/roles/app/vars/main.yml
+  create  foo/roles/common/files/bar.txt
+  create  foo/roles/common/handlers/main.yml
+  create  foo/roles/common/tasks/main.yml
+  create  foo/roles/common/templates/noop.conf.j2
+  create  foo/roles/common/vars/main.yml
+  create  foo/roles/monitoring/files/bar.txt
+  create  foo/roles/monitoring/handlers/main.yml
+  create  foo/roles/monitoring/tasks/main.yml
+  create  foo/roles/monitoring/templates/noop.conf.j2
+  create  foo/roles/monitoring/vars/main.yml
+  create  foo/site.yml
+  create  foo/staging
+  create  foo/webservers.yml
+</code></pre>
+
+<p>peep around, some of the files are already filled out for n00bz</p>
+
+<h3>
+<a name="playbook-role" class="anchor" href="#playbook-role"><span class="octicon octicon-link"></span></a>playbook role</h3>
+
+<p>create a new role scaffold in the current directory's playbook</p>
+
+<pre><code># create an nginx role in the ./roles directory
+$ playbook role nginx
+</code></pre>
+
+<p>you should see the output</p>
+
+<pre><code>create  roles/nginx
+create  roles/nginx/files/bar.txt
+create  roles/nginx/handlers/main.yml
+create  roles/nginx/tasks/main.yml
+create  roles/nginx/templates/noop.conf.j2
+create  roles/nginx/vars/main.yml
+</code></pre>
+
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/pferdefleisch">pferdefleisch</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
