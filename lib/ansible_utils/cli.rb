@@ -1,7 +1,7 @@
-require 'playbook'
+require 'ansible_utils'
 require 'thor'
 
-module Playbook
+module AnsibleUtils
   class Cli < Thor
     include Thor::Actions
 

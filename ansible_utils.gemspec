@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'playbook/version'
+require 'ansible_utils/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "playbook"
-  spec.version       = Playbook::VERSION
+  spec.name          = "ansible_utils"
+  spec.version       = AnsibleUtils::VERSION
   spec.authors       = ["Aaron Cruz"]
   spec.email         = ["aaron@aaroncruz.com"]
-  spec.description   = %q{Generate ansible playbooks}
-  spec.summary       = %q{Generate ansible playbooks}
+  spec.description   = %q{Ansible Generators}
+  spec.summary       = %q{Ansible Generators}
   spec.homepage      = "http://aaroncruz.com"
   spec.license       = "MIT"
 
