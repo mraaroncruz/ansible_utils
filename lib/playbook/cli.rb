@@ -14,12 +14,9 @@ module Playbook
       directory "templates/new", destination
     end
 
-    desc "module NAME", "Create a new module"
-    def module name
-    end
-
-    desc "task NAME", "Add a new task to playbook"
-    def task name
+    desc "task NAME", "Add a new role to current playbook"
+    def role name
+      directory "templates/new/roles/common", "roles/#{name}"
     end
   end
 end
