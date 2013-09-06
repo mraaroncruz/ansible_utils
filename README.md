@@ -4,7 +4,7 @@ Scaffold generator for ansible playbooks
 
 ## Installation
 
-Install >= 1.9.2
+Install ruby >= v1.9.2
 
     $ gem install ansible_utils
 
