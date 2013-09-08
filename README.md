@@ -1,6 +1,12 @@
 # Ansible Utils
 
-Scaffold generator for ansible playbooks
+__Scaffold generator for ansible playbooks__
+
+I am using this project to learn ansible so if this project seems very incomplete and at times confusing, it's because it is.  
+
+The inspiration is from the cookbook functionality of chef's knife tool.  
+
+This is not by any means meant to replace ansible's fantastic `ansible-playbook` tool  
 
 ## Installation
 
