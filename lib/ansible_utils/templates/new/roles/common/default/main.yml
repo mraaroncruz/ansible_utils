@@ -1,0 +1,5 @@
+---
+# put your default playbook recipes here
+
+my_ruby_version: 2.0.0-p247
+user_name: bob
