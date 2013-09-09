@@ -11,7 +11,7 @@ module AnsibleUtils
 
     desc "new", "Create a new playbook"
     def new destination=Dir.pwd
-      directory "templates/new", destination
+      directory 'templates/new', destination
     end
 
     desc "task NAME", "Add a new role to current playbook"
